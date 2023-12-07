@@ -1,0 +1,18 @@
+---
+interface Props {
+	href: string;
+	icono: string;
+	text: string;
+    color: string
+}
+
+const { href, icono, text, color } = Astro.props;
+var css = "inline-block rounded-full px-4 py-2 text-2sm font-semibold mr-2 mb-2 w-fit "+color;
+var text2 = "  "+text;
+---
+
+<a class={css} href={href} target="_blank">
+    <b>
+        <i class={icono}></i> {text2}
+    </b>
+</a>

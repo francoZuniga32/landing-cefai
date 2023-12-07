@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Link_button from '../components/Link_button.astro';
+---
+
+<Layout title="CEFAI - Recursos">
+    <section class="h-screen m-8 grid grid-cols-1 content-center ">
+        <div class="w-screen grid grid-cols-1 sm:grid-cols-2">
+            <div class="w-auto ">
+                <h1 class="text-4xl">Apuntes</h1>
+                <p>Contamos con un drive de apuntes, trabajos prácticos, parciales y libros de las Licenciaturas y Profesorado. 
+                    Esta es una recopilacion que llevo años en poder realizarse y seguimos sumando contenido. Espero que les sea de utilidad 😎.</p>
+                <Link_button text="Drive" icono="fi fi-rr-folder-open" color="bg-orange-400" href="/hola" ></Link_button>
+            </div> 
+            <div class="w-auto ">
+                <h1 class="text-4xl">Repositorios de Codigo</h1>
+                <p>Contamos a su vez con repositorios de codigo de las diferentes materias de programacion, para que te sirvan de guia en tus primetas incursiones en la programacion.</P>
+                <div class="flex flex-col">
+                    <Link_button text="RPA - Franco Zuñiga" icono="fi fi-brands-github" color="bg-gray-500 text-white-100" href="https://www.youtube.com/watch?v=k7Oo18gECmg" ></Link_button>
+                    <Link_button text="EDAT - Franco Zuñiga" icono="fi fi-brands-github" color="bg-gray-500 text-white-100" href="https://www.youtube.com/watch?v=pBn5g314d5g" ></Link_button>
+                    <Link_button text="Concurrente - Franco Zuñiga" icono="fi fi-brands-github" color="bg-gray-500 text-white-100" href="/hola" ></Link_button>
+                </div>
+            </div>
+        </div>
+    </section>
+</Layout>

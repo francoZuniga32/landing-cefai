@@ -1,0 +1,74 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="bg-zinc-900 text-gray-300 m-0 p-0">
+		<nav class="flex w-screen sm:flex-row flex-col h-auto sm:h-10 mt-5">
+			<div class="w-screen sm:w-1/4 ml-10 justify-center">
+				<a href="/" class="self-center justify-center"><img src="/logo.png" class=" w-10"/></a>
+			</div>
+			<div class="w-screen sm:w-3/4 flex sm:flex-row flex-col justify-center">
+				<a class="w-20 text-center self-center hover:border-gray-300 hover:border-b-2" href="/">Home</a>
+				<a class="w-20 text-center self-center hover:border-gray-300 hover:border-b-2" href="/recursos">Recursos</a>
+				<a class="w-20 text-center self-center hover:border-gray-300 hover:border-b-2" href="/blog">Blog</a>
+				<a class="w-20 text-center self-center hover:border-gray-300 hover:border-b-2" href="/proyectos">Proyectos</a>
+			</div>
+		</nav>
+		<slot transition:animate="slide" />
+		<footer class=" w-full h-96 p-2 border-gray-400 flex flex-col sm:flex-row">
+			<div class="w-screen sm:w-1/2 flex flex-col items-center place-content-center">
+				<img src="/logo.png" class="w-24"/>
+			</div>
+			<div class="w-screen sm:w-1/4 pr-2">
+				<h3 class="text-2xl">Contactanos</h3>
+				<br>
+				<a href="" target="_blank" ><i class="fi fi-brands-instagram"></i> Instagram CEFAI.</a><br/>
+				<i class="fi fi-rr-envelope"></i> cefai@fi.uncoma.edu.ar
+			</div>
+			<sm class="w-screen sm:w-1/4 pr-2">
+				<h3 class="text-2xl">Creditos</h3>
+				
+				<br/>
+				<p>Programador: franco agustin ojeda zuñiga.</p>
+				<p>Iconos: Iconos diseñados por Freepik from www.flaticon.es'</p>
+				<p>Imagen de <a href="https://www.freepik.es/vector-gratis/personas-que-dan-cinco-planos-diseno_6143574.htm#from_view=detail_alsolike">Freepik</a></p>
+			</div>
+		</footer>
+	</body>
+</html>
+<style is:global>
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-solid-straight/css/uicons-solid-straight.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+html{
+	width: 100%;
+}
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: large;
+	overflow-x: hidden;
+}
+
+</style>

@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Link_button from '../components/Link_button.astro';
+---
+
+<Layout title="CEFAI">
+	<main>
+		<div class="mt-10 flex h-screen">
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-12">
+				<h1 class="text-9xl bg-gradient-to-r from-cyan-600 via-indigo-600 to-fuchsia-700 bg-clip-text text-transparent"><b>CEFAI</b></h1>
+				<p>Somos el Centro de Estudiantes de la Facultad de Informática, y queremos que formes parte de la comunidad FAI.</p>
+			</div>
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden justify-items-end">
+				<img src="/principal.png" alt="">
+			</div>
+		</div>
+		<div class="flex h-screen">
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Bienestar</h2>
+				<p>Uno de nuestros principales objetivos es que te sientas cómodo y a gusto en la facultad. Es por eso que llevamos a cabo actividades recreativas, hacer algo distinto siempre viene bien ⚽</p>
+			</div>
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden justify-items-end">
+				<img src="/bienestar.png" alt="">
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden">
+				<img src="/recursos.png" alt="">
+			</div>
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Recursos</h2>
+				<p>Accede a material de estudio exclusivo para estudiantes de la Facultad de Informática. Contiene apuntes, parciales y material de años anteriores, sin duda te será de utilidad😎</p>
+				<br/>
+				<Link_button text="Recursos" icono="fi fi-br-box-alt" color="bg-orange-400 text-gray-200" href="/hola" >
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Reclamos</h2>
+				<p>No todo siempre es color de rosas, y pueden surgir algunos problemas, es por eso que estamos para intervenir 👮</p>
+			</div>
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden justify-items-end">
+				<img src="reclamos.png" alt="">
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden ">
+				<img src="/informado.png" alt="">
+			</div>
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Mantenete Informado</h2>
+				<p>Mantenete al tanto de las ultimas novedades sobre la facultad, y la comunidad FAI, con nuestra newsletter. Tambien seguinos en nuestro Instagram 😉.</p>
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Barcito</h2>
+				<p>Recarga energías en nuestro barcito, ofrecemos todo lo que necesita un estudiante cansado 😴. Tenemos los mejores precios y atencion al cliente, ademas siempre te sacamos una sonrisa 🤗</p>
+			</div>
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden justify-items-end">
+				<img src="barcito.png" alt="">
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden">
+				<img src="comunidad.png" alt="">
+			</div>
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Unite a nuestra comunidad</h2>
+				<p>Se parte de nuestra comunidad y conoce a gente con los mismo intereses que tu. Puedes contribuir con los demás y ayudar a otros como tu. Unite a nuestros grupos de Whatsapp, Discord, y demás.</p>
+				<br>
+				<div class="flex flex-row justify-around">
+					<Link_button text='Comunidad FAI' icono='fi fi-brands-whatsapp' color='bg-green-600 text-gray-200' href='#'></Link_button>
+					<Link_button text='Discord FAI' icono='fi fi-brands-discord' color='bg-blue-700 text-gray-200' href='#'></Link_button>
+				</div>
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Conoce a nuestros ROBOTS</h2>
+				<p>Como dice el dicho "El tiempo es oro", por eso programamos algunos bots para que nos ayuden con algunas tareas que nos quitan ese preciado tiempo. Bienvenidos a la era de las maquinas 🤖</p>
+				<br/>
+				<Link_button href='/bot' icono='fi fi-brands-telegram' text='Pedco STATUS' color='bg-blue-600 text-gray-200'></Link_button>
+			</div>
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden justify-items-end">
+				<img src="bots.png" alt="">
+			</div>
+		</div>
+		<div class="flex h-screen content-center">
+			<div class="w-1/2 sm:grid grid-cols-1 content-center hidden">
+				<img src="tramites.png" alt="">
+			</div>
+			<div class="sm:w-1/2 w-screen grid grid-cols-1 content-center p-8">
+				<h2 class="text-6xl">Trámites</h2>
+				<p>Hacer tramites puede ser muy difícil sobre todo cuando no se sabe mucho del tema, que papeles tengo que llevar, que es lo que tengo que pedir, ufff eso marea mucho no 😵‍💫 . Si tenés alguna duda sobre esto no dudes en consultarnos.</p>
+				<br/>
+				<Link_button href="/preguntasfrecuentes" icono="fi fi-ss-user-md-chat" text="Preguntas Frecuentes" color="bg-blue-600"></Link_button>
+			</div> 
+		</div>
+		<div class="flex flex-col h-screen content-center items-center place-content-center bg-gradient-to-br from-indigo-700 to-purple-950 background-animate mb-32">
+			<h1 class="text-4xl"><b>¿Aun tienes dudas sobre el CEFAI?</b></h1>
+			<br/>
+			<Link_button text='Saber Más' icono='' href='/cefai' color='bg-gray-700 text-gray-200'></Link_button>
+		</div>
+	</main>
+</Layout>
+<style>
+	.background-animate {
+    background-size: 400%;
+
+    -webkit-animation: AnimationName 3s ease infinite;
+    -moz-animation: AnimationName 3s ease infinite;
+    animation: AnimationName 3s ease infinite;
+  }
+
+  @keyframes AnimationName {
+    0%,
+    100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  main{
+	widows: 100%;
+  }
+</style>
